@@ -74,7 +74,7 @@ The ConditionalRender component allows you to conditionally render content based
 | ----------------- | ------------------------------------------------------------------------------------- | ----------- |
 | children          | The React children element to be rendered.                                            | true        |
 | condition         | A boolean value determining whether to render the children or the fallback component. | true        |
-| fallbackComponent | A React component to be rendered if the condition is false..                          | false       |
+| fallbackComponent | A React component to be rendered if the condition is false.                           | false       |
 
 #### Examples
 
@@ -131,7 +131,7 @@ export default App;
 
 ## Contributing
 
-Contributions to Extra React are welcome! If you find any issues or want to suggest improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/Petros-Petrosyan/extra-react).
+Contributions to Extra React are welcome! If you find any issues or want to suggest improvements, please open an issue or submit a pull request on the [repository](https://github.com/Petros-Petrosyan/extra-react).
 
 ## License
 
