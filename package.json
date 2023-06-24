@@ -1,13 +1,28 @@
 {
   "name": "extra-react",
-  "version": "1.1.3",
-  "description": "",
+  "version": "1.1.6",
+  "description": "Extra React is a component library for React.js that aims to make developers' lives easier by providing two components: List and ConditionalRender.",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --mode production"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petros-Petrosyan/extra-react.git"
+  },
+  "keywords": [
+    "React",
+    "List",
+    "ConditionalRender",
+    "conditional rendering",
+    "components"
+  ],
+  "author": "Petros Petrosyan",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Petros-Petrosyan/extra-react/issues"
+  },
+  "homepage": "https://github.com/Petros-Petrosyan/extra-react#readme",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
