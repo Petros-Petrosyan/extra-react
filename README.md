@@ -13,6 +13,7 @@ npm install extra-react
 ### List
 
 The List component is designed to render a list of items based on the provided data array.
+The List component takes care of assigning unique keys to each item in the provided data array, so you don't have to worry about it every time you use the List component.
 
 #### Props
 
