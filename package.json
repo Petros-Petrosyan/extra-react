@@ -1,6 +1,6 @@
 {
   "name": "extra-react",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Extra React is a component library for React.js that aims to make developers' lives easier by providing two components: List and ConditionalRender.",
   "main": "dist/index.js",
   "scripts": {

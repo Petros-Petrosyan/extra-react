@@ -1,6 +1,6 @@
 # Extra React
 
-Extra React is a component library for React.js that aims to make developers' lives easier by providing two components: List and ConditionalRender.
+Extra React is a component library for React.js that aims to make developers' lives easier by providing two components: List and Conditional.
 
 ## Install
 
@@ -17,11 +17,11 @@ The List component takes care of assigning unique keys to each item in the provi
 
 #### Props
 
-| Name          | Description                                                                                                                                                     | Is Required |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| data          | An array of data.                                                                                                                                               | true        |
-| renderItem    | A React component that defines how each item in the list should be rendered.                                                                                    | true        |
-| uniqueKeyProp | A string representing the unique key property in the data array. If the data objects have a unique property like an ID, it is recommended to provide this prop. | false       |
+| Name          | Description                                                                                                                                                       | Is Required |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| data          | An array of data.                                                                                                                                                 | true        |
+| renderItem    | A React component that defines how each item in the list should be rendered.                                                                                      | true        |
+| uniqueKeyProp | A string representing the unique key property in the data array. If the data objects have a unique property like an "id", it is recommended to provide this prop. | false       |
 
 #### Examples
 
@@ -65,30 +65,30 @@ const App = () => {
 export default App;
 ```
 
-### ConditionalRender
+### Conditional
 
-The ConditionalRender component allows you to conditionally render content based on a given condition.
+The Conditional component allows you to conditionally render content based on a given condition.
 
 #### Props
 
-| Name              | Description                                                                           | Is Required |
-| ----------------- | ------------------------------------------------------------------------------------- | ----------- |
-| children          | The React children element to be rendered.                                            | true        |
-| condition         | A boolean value determining whether to render the children or the fallback component. | true        |
-| fallbackComponent | A React component to be rendered if the condition is false.                           | false       |
+| Name      | Description                                                                           | Is Required |
+| --------- | ------------------------------------------------------------------------------------- | ----------- |
+| children  | The React children element to be rendered.                                            | true        |
+| condition | A boolean value determining whether to render the children or the fallback component. | true        |
+| fallback  | A React component to be rendered if the condition is false.                           | false       |
 
 #### Examples
 
 ```jsx
 // Simple Example
 
-import { ConditionalRender } from "extra-react";
+import { Conditional } from "extra-react";
 
 const App = () => {
   return (
-    <ConditionalRender condition={false}>
+    <Conditional condition={false}>
       <p>If the condition is true, render me. Otherwise, render nothing.</p>
-    </ConditionalRender>
+    </Conditional>
   );
 };
 
@@ -98,13 +98,13 @@ export default App;
 ```jsx
 // Advanced Example
 
-import { ConditionalRender } from "extra-react";
+import { Conditional } from "extra-react";
 
 const Fallback = () => {
   return (
-    <ConditionalRender
+    <Conditional
       condition={false}
-      fallbackComponent={() => (
+      fallback={() => (
         <p>
           The condition is false in both the App component and the Fallback
           component.
@@ -115,15 +115,15 @@ const Fallback = () => {
         The condition is false in the App component but true in the Fallback
         component.
       </p>
-    </ConditionalRender>
+    </Conditional>
   );
 };
 
 const App = () => {
   return (
-    <ConditionalRender condition={false} fallbackComponent={Fallback}>
+    <Conditional condition={false} fallback={Fallback}>
       <p>The condition is true in the App component.</p>
-    </ConditionalRender>
+    </Conditional>
   );
 };
 

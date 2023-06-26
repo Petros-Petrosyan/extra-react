@@ -1,2 +1,2 @@
 export { List } from "./List";
-export { ConditionalRender } from "./ConditionalRender";
+export { Conditional } from "./Conditional";
